@@ -1,0 +1,38 @@
+{
+	"name": "@hurx/regex",
+	"displayName": "Regex builder",
+	"description": "A builder for regular expressions",
+	"version": "1.0.3",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"compile": "tsc",
+		"test": "yarn install && nodemon --exec \"./node_modules/.bin/ts-node\" ./src/test -e ts,tsx",
+		"clean": "rimraf --glob ./dist",
+		"prepackage": "npm run clean && npm run compile && ts-node ./src/prepackage --execute-prepackage",
+		"package": "cd ./dist && npm publish --access public"
+	},
+	"keywords": [
+		"hurx",
+		"builder",
+		"regex builder",
+		"language",
+		"programming language"
+	],
+	"author": "Stan Hurks",
+	"license": "MIT",
+	"dependencies": {
+		"@types/uuid": "^9.0.2",
+		"chalk": "4.0.0",
+		"inversify": "^6.0.1",
+		"inversify-binding-decorators": "^4.0.0",
+		"rimraf": "^5.0.0",
+		"rxjs": "^7.8.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.0.4",
+		"uuid": "^9.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.15.11"
+	}
+}

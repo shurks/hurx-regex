@@ -1,5 +1,5 @@
 # Regex builder
-A fully typed, documented and easy to use textmate language grammar builder in Typescript by [Hurx (Stan Hurks) 📧](mailto://stan@hurx.digital)
+A fully typed, documented and easy to use textmate language grammar builder in Typescript by [Hurx (Stan Hurks) 📧](mailto:stan@hurks.digital)
 
 The documentation and example should give you a basic understanding on how to create a language grammar with text mate.
 
